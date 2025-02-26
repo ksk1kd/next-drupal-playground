@@ -1,0 +1,14 @@
+uuid: 71756918-b1d1-4356-93a2-6cddccec09a9
+langcode: en
+status: true
+dependencies: {  }
+id: node.article
+site_resolver: site_selector
+configuration:
+  sites:
+    next_js: next_js
+  field_name: {  }
+revalidator: path
+revalidator_configuration:
+  revalidate_page: true
+  additional_paths: ''

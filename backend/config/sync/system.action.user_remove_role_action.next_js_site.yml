@@ -1,0 +1,14 @@
+uuid: ea9114a9-073e-4cf6-aac9-6edd1b2a58ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.next_js_site
+  module:
+    - user
+id: user_remove_role_action.next_js_site
+label: 'Remove the Next.js Site role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: next_js_site
