@@ -1,0 +1,11 @@
+uuid: 07a04175-bda7-4542-9553-29e08a2b6d8b
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_term.tags
+site_resolver: site_selector
+configuration:
+  sites:
+    next_js: next_js
+revalidator: cache_tag
+revalidator_configuration: {  }

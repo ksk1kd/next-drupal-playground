@@ -1,0 +1,12 @@
+uuid: c94b56d1-9315-465f-a66b-6a3f90d30552
+langcode: en
+status: true
+dependencies: {  }
+id: node.page
+site_resolver: site_selector
+configuration:
+  sites:
+    next_js: next_js
+  field_name: {  }
+revalidator: cache_tag
+revalidator_configuration: {  }

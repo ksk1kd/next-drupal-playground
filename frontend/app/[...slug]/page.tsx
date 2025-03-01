@@ -37,9 +37,9 @@ async function getNode(slug: string[]) {
     params,
     cache: "force-cache",
     next: {
-      revalidate: 3600,
+      // revalidate: 3600,
       // Replace `revalidate` with `tags` if using tag based revalidation.
-      // tags: [tag],
+      tags: [tag],
     },
   })
 
