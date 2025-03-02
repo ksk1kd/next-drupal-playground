@@ -20,7 +20,10 @@
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/next": "^2.0",
+        "drupal/restui": "^1.22",
         "drupal/simple_oauth": "^6.0@beta",
+        "drupal/webform": "^6.3@beta",
+        "drupal/webform_rest": "^4.2",
         "drush/drush": "^13.3"
     },
     "conflict": {
