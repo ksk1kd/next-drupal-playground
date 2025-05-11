@@ -13,8 +13,15 @@ import type { DrupalNode } from "next-drupal"
 const RESOURCE_TYPES = ["node--page", "node--article"]
 
 export const getStaticPaths = (async (context) => {
+  const paths = await drupal.getStaticPathsFromContext(RESOURCE_TYPES, context, {
+    params: {
+      "page[offset]": 0,
+      "page[limit]": 10,
+    }
+  });
+
   return {
-    paths: await drupal.getStaticPathsFromContext(RESOURCE_TYPES, context),
+    paths,
     fallback: "blocking",
   }
 }) satisfies GetStaticPaths
