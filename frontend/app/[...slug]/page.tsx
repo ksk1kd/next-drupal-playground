@@ -12,10 +12,14 @@ async function getNode(slug: string[]) {
 
   const params: JsonApiParams = {}
 
-  const draftData = await getDraftData()
-
-  if (draftData.path === path) {
-    params.resourceVersion = draftData.resourceVersion
+  const draft = await draftMode()
+  const isDraftMode = draft.isEnabled
+  if(isDraftMode) {
+    const draftData = await getDraftData()
+    
+    if (draftData.path === path) {
+      params.resourceVersion = draftData.resourceVersion
+    }
   }
 
   // Translating the path also allows us to discover the entity type.
